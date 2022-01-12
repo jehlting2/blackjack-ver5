@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+   
+    <title>Deck of Cards</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css">  
+    
+    <!-- include an external JavaScript file -->
+    <script src="myscript.js"></script>
+	
+	<!-- include an external Json manifest -->
+    <link rel="manifest" href="manifest.json">  
+  </head>
+  
+  <body class="blackjack" onload="closeLightBox()">
+    <!-- page content -->
+        <h1 class="nav"><em>Black Jack</em></h1>
+
+	<p>The goal of the game is to get a score as close to 21 as possible, without going over.<br>
+       Each numbered card is worth its number, face cards are worth 10 and aces are worth 11<br>
+       To start the game, draw a card.
+    </p>
+	
+    <div id="center">
+        
+        <div id="botCardsFirst"></div>
+        <div id="botCardsBack"></div> 
+        <div id="botCardsFront"></div>
+      
+    </div>
+    
+    <div id="center2">
+      
+        <button class="draw" onclick="drawCard(), botDrawCard()">Draw a card</button>
+        <div id="totalValue"></div>
+	      <button class="stand" onclick="botStand()">Stand</button>
+      
+    </div>
+   
+    <div id="center3">
+        <div id="blackJackMain"></div>
+    </div>
+
+    
+    <div class="footer">Made by Jannes &nbsp;&nbsp;&nbsp;&nbsp; &copy; 2021 &nbsp;&nbsp;&nbsp;&nbsp; Background image courtesy of Imgur &nbsp;&nbsp;&nbsp;&nbsp;<div>Icons and Favicon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></div>
+	
+	<div id="lightbox" onclick="closeLightBox()">
+    <div id="message">This is a message</div>
+	</div>
+	
+  </body>
+  
+</html>
